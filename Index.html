@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypertext Markup Language</title>
-
+    <link rel="icon" type="image/x-icon" href="favi.ico">
 
 </head>
 <!--<body style="background-color:powderblue;"> this is the syntax for assigning styles in the body-->
@@ -310,12 +310,286 @@
         
         Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
     </p>
-    <a href="css.html">Go to C S S Casvading Style Sheet Page </a>
+    <a href="css.html" target="_blank">Go to C S S Casvading Style Sheet Page </a>
     
     <hr>
-    <h1>Links</h1>
+    <h1>L i n k s</h1>
 
+    <pre> <ins><b>HTML Links - Hyperlinks</b></ins><br>
+        HTML links are hyperlinks.
+        
+        You can click on a link and jump to another document.
+        
+        When you move the mouse over a link, the mouse arrow will turn into a little hand.
+    </pre>
+    <p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+    <h2>The target Attribute</h2>
+
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
+    <p>If target="_blank", the link will open in a new browser window or tab.</p>
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+    <h2>Image as a Link</h2>
+
+    <p>The image below is a link. Try to click on it.</p>
+
+    <img src="images/smiley (1).gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+    <h2>Link to an Email Address</h2>
+
+    <p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+    
+    <p><a href="mailto:someone@example.com">Send email</a></p>
+    <h2>Link Titles</h2>
+    <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+    
+    <h2>External Paths</h2>
+
+    <p>This example links to a page located in the html folder on the current web site:</p>
+    
+    <p><a href="/html/default.asp">HTML tutorial</a></p>
+    <h2>External Paths</h2>
+
+    <p>This example uses a full URL to link to a web page:</p>
+    <p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></p>
+    <h2>External Paths</h2>
+
+    <p>This example links to a page located in the same folder as the current page:</p>
+
+    <p><a href="default.asp">HTML tutorial</a></p>    
+        
+    
+    <h1>HTML Link Colors</h1>
+    <pre>By default, a link will appear like this (in all browsers):
+
+    An unvisited link is underlined and blue
+    A visited link is underlined and purple
+    An active link is underlined and red
+    You can change the link state colors, by using CSS:
+    </pre>
+    <a href="llink_colors.html" target="_blank">Go to the link color page</a>
+    <br><br>
+    <a href="link_colors_button.html" target="_blank">Go to the link button page</a>
+
+    <h1>Link B O O K M A R K S</h1>
+    <p>HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+
+        Create a Bookmark in HTML
+        Bookmarks can be useful if a web page is very long.
+        
+        To create a bookmark - first create the bookmark, then add a link to it.
+        
+        When the link is clicked, the page will scroll down or up to the location with the bookmark.
+    </p>
     
 
-</body>
-</html>
+    <h3>You can also add a link to a bookmark on another page:</h3>
+    <p><a href="css.html#20">Jump to Chapter 20</a></p>
+    </p><a href="css.html#21">Jump to Chapter21</a></p>
+
+    <h3>First, use the id attribute to create a bookmark: Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</h3>
+    <p><a href="#C1" target="_blank">Jump to Chapter 1</a></p>
+    <p><a href="#C3">Jump to Chapter 3</a></p>
+    <h2 id="C1">Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C3">Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+    <h2>Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+
+    <h1>I M A G E S</h1>
+    <h2>HTML Image</h2>
+    <p>src attribute | alt attribute | width attribute | height attribute | style attribute</p>
+    <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    <br>
+    <img src="pic_tru.jpg" alt="Trulli" width="500" height="333">
+    <br>
+    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+    <h2>Alternative text</h2>
+
+    <p>The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what the image contains:</p>
+
+    <img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+    <h2>Width/Height Attributes or Style?</h2>
+    <p>if you apply style to the head same sample below will overrides the inline style applied to the img</p>
+    <pre>
+        !DOCTYPE html >
+        html >
+        head >
+        style >
+        /* This style sets the width of all images to 100%: */
+        img {
+        width: 100%;
+        }
+        /style>
+        /head>
+        body></pre>
+    <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+    
+    <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+    
+    <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+    
+    <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+    <h2>Images in Another Folder</h2>
+    <p>It is common to store images in a sub-folder. You must then include the folder name in the src attribute:</p>
+    
+    <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+    <h2>Animated Images</h2>
+
+    <p>HTML allows moving images:</p>
+    
+    <img src="programming.gif" alt="Computer man" style="width:48px;height:48px;">
+    <p>The image is a link. You can click on it.</p>
+
+    <a href="css.html">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+     
+    <h1>Image Floating</h1>
+    <h2>Floating Images</h2>
+    <p><strong>Float the image to the right:</strong></p>
+
+    <p>
+    <img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+    <p><strong>Float the image to the left:</strong></p>
+    <p>
+    <img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+    </p>
+
+    <h1>HTML Image Maps<h1>
+        <h2>Image Maps</h2>
+        <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+        
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map3">
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2">
+          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2">
+        </map>
+
+        <h2>Image Maps</h2>
+        <p>Click on the computer to go to a new page and read more about the topic:</p>
+        
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map3">
+        </map>
+        <h2>Image Maps</h2>
+        <p>Click on the croissant to go to a new page and read more about the topic:</p>
+        
+        <img src="frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+        
+        <map name="foodmap">
+          <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map_croissant">
+        </map>
+
+        <h2>Image Maps</h2>
+
+    <p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+    <area shape="circle" coords="337,300,44" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map5" onclick="myFunction()">
+    </map>
+
+    <script>
+    function myFunction() {
+    alert("You clicked the coffee cup!");
+    }
+    </script>
+    <h2>Background Image</h2>
+
+    <p>A background image for a p element:</p>
+
+    <p style="background-image: url('img_girl.jpg');">
+    You can specify background images<br>
+    for any visible HTML element.<br>
+    In this example, the background image<br>
+    is specified for a p element.<br>
+    By default, the background-image<br>
+    will repeat itself in the direction(s)<br>
+    where it is smaller than the element<br>
+    where it is specified. (Try resizing the<br>
+    browser window to see how the<br>
+    background image behaves.
+    </p>
+    <h2>Background Repeat</h2>
+    
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background6" target="_blank">background for the body</a> 
+    <p style="background-image: url('example_img_girl.jpg')">By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+
+    <h2>Background No Repeat</h2>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background6_1" target="_blank">background for the body</a> 
+    <p>You can avoid the image from being repeated by setting the background-repeat property to "no-repeat".</p>
+    <h2>Background Cover</h2>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background7" target="_blank">background for the body</a> 
+    <p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+    <h2>Background Stretch</h2>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background8" target="_blank">background for the body</a> 
+    <p>Set the background-size property to "100% 100%" and the background image will be stretched to cover the entire element, in this case the body element.</p>
+
+    <h2>The picture Element</h2>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture1" target="_blank">the picture element</a><br>
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_food.jpg">
+      <source media="(min-width: 465px)" srcset="img_car.jpg">
+      <img src="img_girl.jpg" style="width:auto;">
+    </picture>
+    
+    <p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+    The browser looks for the first source element where the media query matches the user's current viewport width,
+    and fetches the image specified in the srcset attribute.</p>
+    
+    <p>The img element is required as the last child tag of the picture declaration block.
+    The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+    </p>
+
+    <h2>The picture Element</h2>
+    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture_format" target="_blank">Get code here</a></p>
+    <picture>
+      <source srcset="img_avatar.png">
+      <source srcset="img_girl.jpg">
+      <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+    </picture>
+    <p>The picture element can be used when the image format is not supported by all devices</p>
+    
+    <p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+    <h1>Favicon File Format Support</h1>
+    <p>The following table shows the file format support for a favicon image: <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank">read more</a></p>
+    <h1>HTML Page Title</h1>
+    <p>Every web page should have a page title to describe the meaning of the page.
+    The title element adds a title to your page: <a href="https://www.w3schools.com/html/html_page_title.asp" target="_blank">read more</a></p>
+    
+    <h1>HTML Table</h1>
+    <a href="table.html" target="_blank">Go to page table</a>
+    </body>
+    </html>
