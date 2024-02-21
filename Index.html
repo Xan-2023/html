@@ -1777,6 +1777,41 @@
     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_draganddrop2">Getcode here</a></p>
     <h1>HTML Web Storage API</h1>
     <p><a href="https://www.w3schools.com/html/html5_webstorage.asp">Getcode here</a></p>
+   <p><img src="click.JPG"></p>
+   <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_session" target="_blank">Get code here</a></p>
+   <p>Count numbers: <output id="result"></output></p>
+   <button onclick="startWorker()">Start Worker</button> 
+   <button onclick="stopWorker()">Stop Worker</button>
    
+   <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+   
+   <script>
+   var w;
+   
+   function startWorker() {
+     if(typeof(Worker) !== "undefined") {
+       if(typeof(w) == "undefined") {
+         w = new Worker("demo_workers.js");
+       }
+       w.onmessage = function(event) {
+         document.getElementById("result").innerHTML = event.data;
+       };
+     } else {
+       document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+     }
+   }
+   
+   function stopWorker() { 
+     w.terminate();
+     w = undefined;
+   }
+   </script>
+  
+  <p><img src="click1.JPG"></p>
+  <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webworker" target="_blank">Get code here</a></p>
+  <p><img src="click2.JPG"></p>
+  <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_sse" target="_blank">Get code here</a></p>
+  
+  
   </body>
 </html>
